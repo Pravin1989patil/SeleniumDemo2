@@ -6,7 +6,14 @@
   <artifactId>SeleniumDemo2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
+	  <pluginManagement>
         <plugins>
+		<plugins>
+			<plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-compiler-plugin</artifactId>
+	          <version>3.11.0</version>
+	      </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -18,6 +25,7 @@
                 </configuration>
             </plugin>
         </plugins>
+		  <pluginManagement>
     </build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
